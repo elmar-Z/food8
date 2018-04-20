@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <section>
+
+   </section>
+
+   <template>
+       <article>
+           <h2 data-header></h2>
+           <img data-image src="" alt="">
+           <p data-description></p>
+           <p data-hours></p>
+       </article>
+   </template>
+
+    <script>
+        let jsonUrl = "http://mixel.dk/kea/food8/wordpress/wp-json/wp/v2/steder";
+        let steder = [];
+        let display = document.querySelector("section");
+        let template = document.querySelector("template");
+
+        document.addEventListener("DOMContentLoaded", hentJson);
+
+        async function hentJson() {
+            let dataJson = await fetch(jsonUrl);
+            steder = await dataJson.json();
+            console.log(steder);
+            visSteder();
+
+        }
+
+        function visSteder() {
+            steder.forEach(sted => {
+                let klon = template.cloneNode(true).content;
+
+                klon.querySelector("[data-header]").textContent = sted.title.rendered;
+
+                klon.querySelector("[data-image]").src = sted.acf.image.url;
+
+                klon.querySelector("[data-image]").alt = sted.title.rendered;
+
+                klon.querySelector("[data-description]").innerHTML = sted.content.rendered;
+
+                klon.querySelector("[data-hours]").innerHTML = sted.acf.aabningstider;
+
+                display.appendChild(klon);
+            });
+        }
+
+    </script>
+</body>
+</html>
