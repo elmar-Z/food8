@@ -8,9 +8,22 @@
 </head>
 
 <body>
-    <header>
-        <img src="img/logo.png" alt="Food8 logo">
+    <header class="header">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Food8 logo">
+        </a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+        <ul class="menu">
+            <li><a href="index.html">Steder</a></li>
+            <li><a href="#about">Nyheder</a></li>
+            <li><a href="#guides">Guides</a></li>
+            <li><a href="#careers">Om os</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
     </header>
+
    <section id="articles">
 
    </section>
@@ -24,38 +37,6 @@
        </article>
    </template>
 
-    <script>
-        let jsonUrl = "http://mixel.dk/kea/food8/wordpress/wp-json/wp/v2/steder";
-        let steder = [];
-
-        let display = document.querySelector("section");
-        let template = document.querySelector("template");
-
-        document.addEventListener("DOMContentLoaded", hentJson);
-
-        async function hentJson() {
-            let dataJson = await fetch(jsonUrl);
-            steder = await dataJson.json();
-            console.log(steder);
-
-            visSteder();
-
-        }
-
-        function visSteder() {
-            steder.forEach(sted => {
-                let klon = template.cloneNode(true).content;
-
-                klon.querySelector("[data-header]").textContent = sted.title.rendered;
-
-                klon.querySelector("[data-image]").src = sted.acf.logo.url;
-
-                klon.querySelector("[data-image]").alt = sted.title.rendered;
-
-                display.appendChild(klon);
-            });
-        }
-
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>

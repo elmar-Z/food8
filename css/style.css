@@ -6,20 +6,12 @@
 body {
     font-family: sans-serif;
     background-color: #fbfaf3;
-}
-
-header {
-    margin-top: 25px;
-}
-
-header img {
-    width: 60%;
-    margin-left: 20%;
+    color: #334151;
 }
 
 #articles {
     grid-column: 1fr;
-    margin: 25px;
+    margin: 85px 25px 25px 25px;
 }
 
 #articles h2 {
@@ -33,10 +25,149 @@ img {
 article {
     margin-bottom: 20px;
     transition: all 0.5s ease;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 article:hover {
-    opacity: 1;
+    opacity: 0.7;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*** Menu ***/
+/*** https://jsfiddle.net/ug6f918s/423/?utm_source=website&utm_medium=embed&utm_campaign=ug6f918s ***/
+
+/* Header */
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    top: 0;
+}
+
+.header img {
+    height: auto;
+    width: 100px;
+    margin-top: 7px;
+    margin-left: calc(50% - 50px);
+}
+
+a {
+    color: #334151;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-top: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f4f4f4;
+}
+
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #334151;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #334151;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 300px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+
