@@ -1,4 +1,4 @@
-let jsonUrl = "http://mixel.dk/kea/food8/wordpress/wp-json/wp/v2/steder";
+        let jsonUrl = "http://mixel.dk/kea/food8/wordpress/wp-json/wp/v2/steder";
         let steder = [];
 
         let display = document.querySelector("section");
