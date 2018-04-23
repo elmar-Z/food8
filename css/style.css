@@ -1,3 +1,5 @@
+/* Generelt */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,9 +11,14 @@ body {
     color: #334151;
 }
 
+h1 {
+    margin: 75px 25px 25px 25px;
+    text-align: center;
+}
+
 #articles {
     grid-column: 1fr;
-    margin: 85px 25px 25px 25px;
+    margin: 15px 25px 25px 25px;
 }
 
 #articles h2 {
@@ -24,18 +31,143 @@ img {
 
 article {
     margin-bottom: 20px;
-    transition: all 0.5s ease;
-    opacity: 0.9;
+    border-bottom: 3px solid #8fc9bc;
 }
 
-article:hover {
+article:last-child {
+    border-bottom: none;
+}
+
+.overskrift {
+    cursor: pointer;
+    opacity: 1;
+}
+.overskrift:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.billede {
+    opacity: 0.9;
+    transition: all 0.5s ease;
+}
+
+.billede:hover {
     opacity: 0.7;
     cursor: pointer;
 }
 
 
+/** Single **/
+
+h3 {
+    padding-top: 20px;
+    border-top: 3px solid #8fc9bc;
+}
+
+.singleoverskrift {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #8fc9bc;
+}
+
+.hours {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p {
+   margin-bottom: 20px;
+    line-height: 1.5
+}
+
+p:nth-child(2) {
+    padding-top: 10px;
+}
+
+.wrapper {
+    margin-top: 80px;
+}
+
+/** om os **/
+
+.wrapper2 {
+    margin: 25px;
+}
 
 
+.wrapper2 input {
+    background-color: white;
+    border: 0;
+}
+
+.wrapper2 h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+h4 {
+    margin: 20px 0;
+    line-height: 1.5;
+}
+
+
+
+/* Footer */
+
+footer {
+    background-color: #334151;
+    color: #fbfaf3;
+    width: calc(100% - 100px);
+    margin: 25px;
+    padding: 25px;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+footer img {
+    width: 50px;
+    padding: 10px;
+    opacity: 0.95;
+    transition: 0.3s ease all;
+}
+
+footer img:hover {
+    opacity: 0.7;
+}
+
+
+/* Booking Field */
+textarea {
+    resize: none;
+    width: 100%;
+    border: none;
+    margin-top: 10px;
+}
+
+input {
+    width: 100%;
+    height: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    border: none;
+}
+
+input:last-child {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+form {
+    margin-top: 20px;
+}
 
 
 
@@ -149,7 +281,7 @@ a {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 300px;
+  max-height: 240px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
