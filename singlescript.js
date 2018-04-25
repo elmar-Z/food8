@@ -61,8 +61,8 @@ function visSteder()  {
 
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 8,
-          center: {lat: -34.397, lng: 150.644}
+          zoom: 12,
+          center: {lat: 55.684145, lng: 12.568984}
         });
         var geocoder = new google.maps.Geocoder();
 
