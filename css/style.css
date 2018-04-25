@@ -90,6 +90,16 @@ p:nth-child(2) {
     margin-top: 80px;
 }
 
+#map {
+	margin: 0 auto;
+	margin-bottom: 3vw;
+	border: 1px solid;
+
+	width: 80vw;
+	height: 40vh;
+}
+
+
 /** om os **/
 
 .wrapper2 {
@@ -301,5 +311,6 @@ a {
   top: 0;
 }
 
+      #floating-panel {
 
-
+      }
