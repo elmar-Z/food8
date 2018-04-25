@@ -36,6 +36,7 @@ function visSteder()  {
 			document.querySelector("[data-menukort]").href = sted.acf.menu.url;
 
 			document.querySelector("[data-address]").value = sted.acf.adresse;
+			document.querySelector("[data-address]").textContent = sted.acf.adresse;
 		}
 	});
 }
