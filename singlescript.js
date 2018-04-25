@@ -36,7 +36,7 @@ function visSteder()  {
 			document.querySelector("[data-menukort]").href = sted.acf.menu.url;
 
 			document.querySelector("[data-address]").value = sted.acf.adresse;
-			document.querySelector("[data-address]").textContent = sted.acf.adresse;
+			document.querySelector("[data-address]").innerHTML = sted.acf.adresse;
 		}
 	});
 }
@@ -67,7 +67,8 @@ function visSteder()  {
         });
         var geocoder = new google.maps.Geocoder();
 
-		document.getElementById('submit').addEventListener('click', function() {
+//		document.getElementById('submit').addEventListener('click', function() {
+          window.addEventListener("load", function(){
           geocodeAddress(geocoder, map);
         });
       }
