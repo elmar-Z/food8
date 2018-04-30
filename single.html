@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="circle"></div>
 	<header class="header">
 		<a href="index.html">
             <img src="img/logo.png" alt="Food8 logo">
@@ -33,6 +34,8 @@
 			<h3>Åbningstider</h3>
 			<p data-hours class="hours"></p>
 
+			<h3>Adresse</h3>
+
 			<div id="floating-panel">
 				<p data-address id="address" value=""></p>
 				<input id="submit" type="button" value="Geocode" placeholder="">
@@ -54,7 +57,7 @@
 			<label for="navn">Eventuelle kommentar</label><br>
 			<textarea rows="4" cols="40" name="besked" placeholder="Din besked"></textarea><br>
 			<input data-booking type="hidden" name="bookingemail" value="">
-			<input type="submit" value="Book nu">
+			<input type="submit" class="submit" value="Book nu">
 
 		</form>
 
