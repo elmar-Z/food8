@@ -11,6 +11,7 @@ body {
     color: #334151;
 }
 
+
 h1 {
     margin: 75px 25px 25px 25px;
     text-align: center;
@@ -31,7 +32,7 @@ img {
 
 article {
     margin-bottom: 20px;
-    border-bottom: 3px solid #8fc9bc;
+    border-bottom: 3px solid #63c3b0;
 }
 
 article:last-child {
@@ -62,14 +63,14 @@ article:last-child {
 
 h3 {
     padding-top: 20px;
-    border-top: 3px solid #8fc9bc;
+    border-top: 3px solid #63c3b0;
 }
 
 .singleoverskrift {
     padding-top: 10px;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 3px solid #8fc9bc;
+    border-bottom: 3px solid #63c3b0;
 }
 
 
@@ -78,7 +79,7 @@ h3 {
     padding-top: 10px;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 3px solid #8fc9bc;
+    border-bottom: 3px solid #63c3b0;
 }
 
 .hours {
@@ -142,7 +143,7 @@ h4 {
 /* Footer */
 
 footer {
-    border: 4px solid #8fc9bc;
+    border: 5px solid #63c3b0;
     color: #334151;
     width: calc(100% - 100px);
     margin: 25px;
@@ -257,7 +258,53 @@ form {
     margin-left: 25px;
 }
 
+.guide1 a {
+    text-decoration: none;
+}.guide2 a {
+    text-decoration: none;
+}
 
+.guide2 {
+    position: relative;
+    width: 100%;
+    height: 42vw;
+    background-size: contain;
+    background-image: url('/img/guide2.jpg');
+    color: #040608;
+    font-size: 1.2em;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.guide2 p {
+    background-color: rgba(255, 255, 255, 0.75);
+    bottom: 0;
+    padding: 15px;
+    margin: 0;
+    position: absolute;
+}
+
+.guide1 {
+    position: relative;
+    width: 100%;
+    height: 42vw;
+    background-size: contain;
+    background-image: url('/img/guide1.jpg');
+    color: #040608;
+    font-size: 1.2em;
+    text-decoration: none;
+    opacity: 0.8;
+    margin-top: 25px;
+}
+
+.guide1 p {
+    background-color: rgba(255, 255, 255, 0.75);
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    margin: 0;
+    position: absolute;
+}
 
 
 
