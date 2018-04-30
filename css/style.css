@@ -193,6 +193,9 @@ form {
     width: 100%;
     background: #334151;
     color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    margin-bottom: 30px;
 }
 
 
