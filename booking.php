@@ -1,6 +1,6 @@
 <?php
 
-$to="mikkellehrmann@gmail.com";
+$to=$_REQUEST['booking-mail'];
 
 $navn=$_REQUEST['navn'];
 $email=$_REQUEST['email'];
