@@ -41,25 +41,6 @@ function visSteder()  {
 	});
 }
 
-/*function initMap() {
-	var centrum =  { lat: 55.676097, lng: 12.568337 }
-	var map = new google.maps.Map(document.getElementById('map'), {
-		zoom: 12,
-		center: centrum
-	});
-	var marker1 = new google.maps.Marker({
-		position: {lat: 55.684145, lng: 12.568984 },
-		title: "Cleaver's",
-		map: map
-	});
-	let infowindow = new google.maps.InfoWindow({
-		content: document.querySelector("[data-header]").getContext;
-	});
-	marker1.addListener("click", () => {
-		infowindow.open(map, marker);
-	});
-} */
-
       function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
@@ -67,7 +48,6 @@ function visSteder()  {
         });
         var geocoder = new google.maps.Geocoder();
 
-//		document.getElementById('submit').addEventListener('click', function() {
           window.addEventListener("load", function(){
           geocodeAddress(geocoder, map);
         });
