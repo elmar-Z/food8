@@ -307,6 +307,46 @@ form {
 }
 
 
+/*** startside ***/
+.startside {
+    margin: 25px;
+}
+
+.startside a {
+    text-decoration: none;
+}
+
+.startside p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.startside img {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.choice {
+    text-align: center;
+    margin: 50px 0 ;
+}
+
+.choice li {
+    display: inline;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: #63c3b0;
+    color: white;
+    transition: 0.4s ease all;
+    border-radius: 3px;
+}
+
+.choice li:hover {
+    opacity: 0.7;
+}
+
+
 
 
 
