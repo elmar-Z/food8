@@ -185,6 +185,8 @@ input {
     margin-top: 10px;
     border: none;
     font-size: 1em;
+
+    border-radius: 10px;
 }
 
 input:last-child {
@@ -194,6 +196,7 @@ input:last-child {
 
 form {
     margin-top: 20px;
+
 }
 
 .menukort {
@@ -229,8 +232,8 @@ form {
 }
 
 .circle {
-    width: 100vh;
-    height: 100vh;
+    width: 90vh;
+    height: 90vh;
     right: -40vh;
     bottom: -40vh;
     position: fixed;
@@ -240,8 +243,18 @@ form {
     z-index: -1;
 }
 
+.adresse {
+    margin-bottom: 15px;
+}
+
 .plads {
     margin-top: 20px;
+}
+
+.tak_wrapper {
+    width: calc(100% - 50px);
+    margin-top: 85px;
+    margin-left: 25px;
 }
 
 
