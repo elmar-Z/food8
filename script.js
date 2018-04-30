@@ -28,6 +28,7 @@
                 //                klon.querySelector(".ret").setAttribute("data-id", hverRet.id);
 
                 klon.querySelector("article").addEventListener("click", () => {
+                    if (sted.acf )
                      location.href = "single.html?id=" + sted.id;
                  });
 
