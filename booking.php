@@ -1,6 +1,6 @@
 <?php
 
-$to=$_REQUEST['booking-mail'];
+$to=$_REQUEST['bookingemail'];
 
 $navn=$_REQUEST['navn'];
 $email=$_REQUEST['email'];

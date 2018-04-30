@@ -39,6 +39,8 @@ function visSteder()  {
 			document.querySelector("[data-address]").innerHTML = sted.acf.adresse;
 
 			document.querySelector("[data-booking]").value = sted.acf.email;
+
+			console.log("value er indsat")
 		}
 	});
 }
