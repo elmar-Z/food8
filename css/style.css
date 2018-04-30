@@ -184,6 +184,17 @@ form {
     margin-top: 20px;
 }
 
+.menukort {
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 100%;
+    background: #334151;
+    color: white;
+}
+
 
 
 
