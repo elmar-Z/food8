@@ -4,11 +4,12 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title></title>
+	<title>Food8</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="circle"></div>
 	<header class="header">
 		<a href="index.html">
             <img src="img/logo.png" alt="Food8 logo">
@@ -17,7 +18,7 @@
 		<label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
 
 		<ul class="menu">
-			<li><a href="index.html">Steder</a></li>
+			<li><a href="steder.html">Steder</a></li>
 			<li><a href="nyheder.html">Nyheder</a></li>
 			<li><a href="guides.html">Guides</a></li>
 			<li><a href="omos.html">Om os</a></li>
@@ -27,11 +28,13 @@
 	<section id="articles">
 		<div class="wrapper">
 			<img data-image src="" alt="">
-			<h2 data-header class="singleoverskrift"></h2>
-			<p data-description></p>
-			<a data-menukort class="menukort" href="">Menukort</a>
+			<h2 data-header class="singleoverskrift2"></h2>
+			<p class="plads" data-description></p>
+			<a data-menukort class="menukort" href="" target="_blank">Se vores menukort her!</a>
 			<h3>Åbningstider</h3>
 			<p data-hours class="hours"></p>
+
+			<h3 class="adresse">Adresse</h3>
 
 			<div id="floating-panel">
 				<p data-address id="address" value=""></p>
@@ -40,7 +43,7 @@
 
 			<div id="map"></div>
 		</div>
-
+    <div data-bookingSection id="booking_section">
 		<h3>Booking af bord</h3>
 		<form action="booking.php">
 			<label for="navn">Navn: </label><br>
@@ -54,10 +57,10 @@
 			<label for="navn">Eventuelle kommentar</label><br>
 			<textarea rows="4" cols="40" name="besked" placeholder="Din besked"></textarea><br>
 			<input data-booking type="hidden" name="bookingemail" value="">
-			<input type="submit" value="Book nu">
+			<input type="submit" class="submit" value="Book nu">
 
 		</form>
-
+</div>
 
 	</section>
 

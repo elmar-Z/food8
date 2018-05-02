@@ -11,6 +11,7 @@ body {
     color: #334151;
 }
 
+
 h1 {
     margin: 75px 25px 25px 25px;
     text-align: center;
@@ -31,7 +32,7 @@ img {
 
 article {
     margin-bottom: 20px;
-    border-bottom: 3px solid #8fc9bc;
+    border-bottom: 3px solid #63c3b0;
 }
 
 article:last-child {
@@ -62,14 +63,23 @@ article:last-child {
 
 h3 {
     padding-top: 20px;
-    border-top: 3px solid #8fc9bc;
+    border-top: 3px solid #63c3b0;
 }
 
 .singleoverskrift {
     padding-top: 10px;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 3px solid #8fc9bc;
+    border-bottom: 3px solid #63c3b0;
+}
+
+
+.singleoverskrift2 {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #63c3b0;
 }
 
 .hours {
@@ -93,7 +103,7 @@ p:nth-child(2) {
 #map {
 	margin: 0 auto;
 	margin-bottom: 3vw;
-	border: 1px solid;
+	border: 0px solid;
 
 	width: 100%;
 	height: 40vh;
@@ -133,8 +143,8 @@ h4 {
 /* Footer */
 
 footer {
-    background-color: #334151;
-    color: #fbfaf3;
+    border: 5px solid #63c3b0;
+    color: #334151;
     width: calc(100% - 100px);
     margin: 25px;
     padding: 25px;
@@ -154,6 +164,7 @@ footer img {
     transition: 0.3s ease all;
 }
 
+
 footer img:hover {
     opacity: 0.7;
 }
@@ -165,14 +176,18 @@ textarea {
     width: 100%;
     border: none;
     margin-top: 10px;
+    font-size: 1em;
 }
 
 input {
     width: 100%;
-    height: 20px;
+    height: 30px;
     margin-bottom: 15px;
     margin-top: 10px;
     border: none;
+    font-size: 1em;
+
+    border-radius: 10px;
 }
 
 input:last-child {
@@ -182,6 +197,7 @@ input:last-child {
 
 form {
     margin-top: 20px;
+
 }
 
 .menukort {
@@ -189,6 +205,7 @@ form {
     float: left;
     height: 50px;
     line-height: 50px;
+    margin-top: 20px;
     text-align: center;
     width: 100%;
     background: #334151;
@@ -203,7 +220,131 @@ form {
     opacity: 0.8;
 }
 
+.submit {
+    background-color: #334151;
+    color: white;
+    cursor: pointer;
+    height: 45px;
+    font-size: 1.2em;
+}
 
+.submit:hover {
+    cursor: pointer;
+}
+
+.circle {
+    width: 90vh;
+    height: 90vh;
+    right: -40vh;
+    bottom: -40vh;
+    position: fixed;
+    background-color: #f6f1e5;
+    opacity: 0.8;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.adresse {
+    margin-bottom: 15px;
+}
+
+.plads {
+    margin-top: 20px;
+}
+
+.tak_wrapper {
+    width: calc(100% - 50px);
+    margin-top: 85px;
+    margin-left: 25px;
+}
+
+.guide1 a {
+    text-decoration: none;
+}.guide2 a {
+    text-decoration: none;
+}
+
+.guide2 {
+    position: relative;
+    width: 100%;
+    height: 42vw;
+    background-size: contain;
+    background-image: url('/img/guide2.jpg');
+    color: #040608;
+    font-size: 1.2em;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.guide2 p {
+    background-color: rgba(255, 255, 255, 0.75);
+    bottom: 0;
+    padding: 15px;
+    margin: 0;
+    position: absolute;
+}
+
+.guide1 {
+    position: relative;
+    width: 100%;
+    height: 42vw;
+    background-size: contain;
+    background-image: url('/img/guide1.jpg');
+    color: #040608;
+    font-size: 1.2em;
+    text-decoration: none;
+    opacity: 0.8;
+    margin-top: 25px;
+}
+
+.guide1 p {
+    background-color: rgba(255, 255, 255, 0.75);
+    bottom: 0;
+    right: 0;
+    padding: 15px;
+    margin: 0;
+    position: absolute;
+}
+
+
+/*** startside ***/
+.startside {
+    margin: 25px;
+}
+
+.startside a {
+    text-decoration: none;
+}
+
+.startside p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.startside img {
+    width: 60%;
+    margin-left: 20%;
+}
+
+.choice {
+    text-align: center;
+    margin: 50px 0 ;
+}
+
+.choice li {
+    display: inline;
+    text-align: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: #63c3b0;
+    color: white;
+    transition: 0.4s ease all;
+    border-radius: 3px;
+}
+
+.choice li:hover {
+    opacity: 0.7;
+}
 
 
 

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guides fra Food8</title>
+    <title>Velkommen til Food8</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="circle"></div>
+   <div class="circle"></div>
     <header class="header">
         <a href="index.html">
             <img src="img/logo.png" alt="Food8 logo">
@@ -24,23 +23,27 @@
             <li><a href="omos.html">Om os</a></li>
         </ul>
     </header>
+    <h1>Velkommen til Food8</h1>
 
-    <section id="articles">
-           <div class="wrapper">
-            <img data-image src="" alt="">
-            <h2 data-header class="singleoverskrift"></h2>
-            <p data-description></p>
-            </div>
+   <section id="articles">
 
+   </section>
 
-    </section>
+   <template>
+       <article>
+           <img data-image class="billede" src="" alt="">
+           <h2 data-header class="overskrift"></h2>
+           <p data-description></p>
+           <p data-hours></p>
+       </article>
+   </template>
+
     <footer>
        <a href="https://www.facebook.com/food8dk/" target="_blank"><img src="img/facebook.svg"></a>
        <a href="https://www.instagram.com/food8dk/" target="_blank"><img src="img/instagram.svg"></a><br>
         <p>Food8 ApS — Langelinie 10, 2100 København Ø — CVR nr. 39306999</p>
     </footer>
 
-    <script src="single-guide.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
